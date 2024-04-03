@@ -8,7 +8,7 @@ public class ExCylinderMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
@@ -21,9 +21,19 @@ public class ExCylinderMove : MonoBehaviour
         // 컴퓨터마다 프레임이 다르기 때문
         gameObject.transform.position += new Vector3(-1.0f, 0.0f, 0.0f) * Time.deltaTime * MoveSpeed;
 
-        if(gameObject.transform.position.x < -12)       //X축 좌표가 -12 미만으로 내려갈때 
+        if (gameObject.transform.position.x < -12)       //X축 좌표가 -12 미만으로 내려갈때 
         {
             gameObject.transform.position += new Vector3(24.0f, 0.0f, 0.0f); //오른쪽으로 X축 24만큼 이동 
         }
+
+        
     }
+
+
+
+
+    
 }
+
+
+      

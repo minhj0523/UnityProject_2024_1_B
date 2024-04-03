@@ -46,4 +46,17 @@ public class ExPlayer : MonoBehaviour
             Debug.Log(collision.gameObject.name);           //해당 오브젝트의 이름을 출력한다. 
         }
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Item"))            //CompareTag 함수는 지어진 Tag(item) 이름을 검사한다 
+        {
+            Debug.Log("아이템과 충돌함");
+            point = +10;                         //10점 포인트를 올린다. point = point + 10의 줄임 표현 
+            Destroy(other.gameObject);   //파괴한다.
+        }
+
+    }
+
 }
+   

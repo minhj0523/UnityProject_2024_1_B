@@ -16,7 +16,7 @@ public class ExMouseButton : MonoBehaviour
         if (Input.GetMouseButtonDown(0)) //마우스 입력이 들어왔을 때  
         {
             Hp -= 10;
-            Debug.Log("체력 : " +  Hp);       //체력확인을 위한 Debug.Log 함수 
+            Debug.Log("체력 : " + Hp);       //체력확인을 위한 Debug.Log 함수 
             if( Hp <= 0 )        //HP가 0이하로 내려가면
             {
                 Destroy(gameObject);        //이 오브젝트를 파괴한다는 함수
